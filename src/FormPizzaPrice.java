@@ -142,10 +142,11 @@ public class FormPizzaPrice extends javax.swing.JFrame {
         storeCost = 1.50;   // The store cost is $1.50 per pizza.
         inchesCost = 0.50;  // per diamater in inches costs $0.50.
         
-        size = (int)sizeSpin.getValue();
+        size = (int)sizeSpin.getValue(); 
+        //To get the value from the field.
         
         pizzaPrice = size * 0.50 + labourCost +storeCost;
-        
+        //The equation to calculte the price of the pizza.
         outputLabel.setText("The price for the pizza is : $" + pizzaPrice + ".");
     }//GEN-LAST:event_enterButtonActionPerformed
 
